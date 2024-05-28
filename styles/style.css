@@ -103,6 +103,12 @@ form button {
     cursor: pointer;
 }
 
+form button:hover {
+    color: black;
+    background-color: #06F3BF;
+    box-shadow: 0px 0px 20px 0px rgba(6, 243, 191, 0.50);
+}
+
 .hachuras {
     margin: 5.19rem 0;
 }
