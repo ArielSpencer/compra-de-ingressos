@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function pontuarTime1() {
     let score = document.querySelector('.score_equipe1').innerHTML;
     score++
@@ -47,3 +48,5 @@ function removerPontoTime2() {
         document.querySelector('.score_equipe2').innerHTML = '0';
     }
 }
+=======
+>>>>>>> parent of 1e4310c (Adicionar JavaScript e hover no botão de compra)
