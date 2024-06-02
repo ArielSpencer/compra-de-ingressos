@@ -9,42 +9,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/_reset.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Dominó</title>
+    <title>e-Ticket</title>
 </head>
 
 <body>
+    <header>
+        <img class="logo" src="./assets/PNG/Logo e-tricket.png" alt="Logo">
+    </header>
     <main class="container">
 
-        <div class="placar"></div>
-        <h1>Score <span>Dominó</span></h1>
-        <div class="placar_equipes">
-            <section class="equipes">
-                    <p><b>Equipe 1</b></p>
-                    <p>Pontuação:</p>
-                    <p><span class="score_equipe1">0</span></p>
-                <button onclick="pontuarTime1()" type="button" class="button-score">+ 1</button>
-                <button onclick="removerPontoTime1()" type="button" class="button-score">- 1</button>
-            </section>
-            <section class="equipes">
-                <p><b>Equipe 2</b></p>
-                <p>Pontuação:</p>
-                <p><span class="score_equipe2">0</span></p>
-            <button onclick="pontuarTime2()" type="button" class="button-score">+ 1</button>
-            <button onclick="removerPontoTime2()" type="button" class="button-score">- 1</button>
-            </section>
-        </div>
+        <div class="grafismo"></div>
+        <h1>Compre seu <span>ingresso</span></h1>
+        <form action="">
+            <label class="input-group">
+                Escolha o tipo
+                <select name="tipo-ingresso" id="tipo-ingresso">
+                    <option value="inferior">Cadeira inferior</option>
+                    <option value="superior">Cadeira superior</option>
+                    <option value="pista">Pista</option>
+                </select>
+            </label>
+            <label class="input-group">Qtde.
+                <input type="number" id="qtd" placeholder="00" min="1" max="10">
+            </label>
+            <button onclick="comprar()" type="button">Comprar</button>
+        </form>
+        <img class="hachuras" src="./assets/SVG/Hachuras.svg" alt="">
         <section>
+            <h2>Quantidade disponível</h2>
+
             <ul class="lista">
-<<<<<<< HEAD
-                <li>Time 1: <span id="qtd-vitorias-equipe1">0</span> Partidas</li>
-                <li>Time 2: <span id="qtd-vitorias-equipe2">0</span> Partidas</li>
-=======
-                <li>Pista<span id="qtd-pista">100</span></li>
-                <li>Cadeira superior<span id="qtd-superior">200</span></li>
-                <li>Cadeira inferior<span id="qtd-inferior">400</span></li>
+                <li>Pista<span id="qtd-pista">50</span></li>
+                <li>Cadeira superior<span id="qtd-superior">20</span></li>
+                <li>Cadeira inferior<span id="qtd-inferior">30</span></li>
                 
->>>>>>> parent of 1e4310c (Adicionar JavaScript e hover no botão de compra)
             </ul>
+            <img src="./assets/Ingresso.svg" alt="">
         </section>
     </main>
 
